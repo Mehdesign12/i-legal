@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lanceur de Chatbot</title>
+    <!-- Assurez-vous d'inclure les styles et scripts nécessaires pour le chatbot -->
+    <link rel="stylesheet" href="path/to/chatbot/styles.css">
+    <script src="path/to/chatbot/script.js"></script>
 </head>
 <body>
     <a href="#" id="launch-chatbot">Lancer le Chatbot</a>
@@ -17,20 +20,15 @@
             // Code pour afficher et lancer le chatbot
             var chatbotContainer = document.getElementById('chatbot-container');
             chatbotContainer.style.display = 'block';
-            initChatbot();
+            // Fonction pour initialiser le chatbot (à personnaliser selon votre implémentation)
+            initChatbot(chatbotContainer);
         });
 
-        function initChatbot() {
-            // Code d'initialisation du chatbot Crisp
-            window.$crisp=[];
-            window.CRISP_WEBSITE_ID="2c852062-80aa-4870-b4c5-9c330b5fcc63";
-            (function(){
-                var d = document;
-                var s = d.createElement("script");
-                s.src = "https://client.crisp.chat/l.js";
-                s.async = 1;
-                d.getElementsByTagName("head")[0].appendChild(s);
-            })();
+        function initChatbot(container) {
+            // Exemple de fonction d'initialisation du chatbot
+            // Remplacez ce code par le code spécifique de votre chatbot
+            container.innerHTML = '<p>Chatbot lancé !</p>';
+            // Insérer ici le code pour initialiser et configurer votre chatbot
         }
     </script>
 </body>
